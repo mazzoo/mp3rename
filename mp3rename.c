@@ -27,7 +27,7 @@ char * opt_suffix   = ".mp3";
 
 char * argv0;
 
-char buf[NAME_MAX];
+char buf[PATH_MAX+NAME_MAX+1];
 
 char xtable[][2]={
 //	{ ' ', '_'},
@@ -229,6 +229,7 @@ int main(int argc, char ** argv)
 
 	if (!argv[optind])
 		usage();
+
 	int i;
 	for (i=optind; i<argc; i++)
 		if (argv[i][0] != '.')
