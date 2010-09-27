@@ -1,0 +1,60 @@
+mp3rename
+~~~~~~~~~
+
+renames files ore directory contents without weirdo characters in the
+filename. some players, or systems don't like weirdo characters.
+weirdo characters are:
+
+ 
+!
+"
+#
+$
+%
+&
+\
+(
+)
+*
++
+:
+;
+<
+=
+>
+?
+@
+[
+\
+]
+^
+`
+{
+|
+}
+
+all of them are replaced with an underscore (_).
+
+
+usage
+~~~~~
+
+./mp3rename version: 0.1
+
+./mp3rename [option(s)] name(s)
+
+        name(s)         one or more file or directroy names
+                        containing .mp3 files to rename (recursively)
+
+option(s):
+        -s suffix       rename files with suffix instead of
+                        the default ".mp3" ending
+        -v              verbose. print a message for each rename
+        -d              print directory names when entering a new dir
+        -p              pretend. just print what would be renamed,
+                        don't change the filenames
+
+license
+~~~~~~~
+see the file LICENSE, it's GPL v2
+
